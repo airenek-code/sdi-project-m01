@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="cal-canvas.js"></script>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="200" height="200" style="border: 1px solid #d3d3d3"></canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      /*  GREY BLOCKS STARTS
+      
+            For the below shapes - GREY Blocks 1 / 2 / 3 / 4
+            Shape below fills 4 x 10,000 pixels which equates to 4 * 25% on a 200 x 200 (40,000) canvas
+            This is our most rudimentary test for accuracy of calculation.
+
+      */
+      //
+
+      // // GREY Block 1
+      // ctx.fillStyle = "rgba(20, 20, 20, 1)";
+      // ctx.fillRect(0, 0, 100, 100);
+
+      // // GREY Block 2
+      // ctx.fillStyle = "rgba(60, 60, 60, 1)";
+      // ctx.fillRect(100, 0, 100, 100);
+
+      // // GREY Block 3
+      // ctx.fillStyle = "rgba(80, 80, 80, 1)";
+      // ctx.fillRect(0, 100, 100, 100);
+
+      // // GREY Block 4
+      // ctx.fillStyle = "rgba(120, 120, 120, 1)";
+      // ctx.fillRect(100, 100, 100, 100);
+
+      // GREY BLOCKS ENDS
+      // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      /* 3 SHAPES STARTS
+
+            For the below 3 shapes - RED Block, BLUE Circle, GREEN Block
+
+        *** MOST PRECISE SCAN
+        [ 1 x 1 ] pixel scan - look for variable called 'sector' in .js file 
+            No filters applied, no grid, strictly shapes only - 24.23 %
+            After applying filters - [ blur / opacity / brightness ] on GREEN BLOCK ONLY, without grid - 25.56%
+  
+
+        *** MODERATE LIBERAL SCAN
+        [ 10 x 10 ] pixel scan - look for variable called 'sector' in .js file
+            No filters applied, no grid, strictly shapes only - 24.00%
+            After applying filters - [ blur / opacity / brightness ] on GREEN BLOCK ONLY, without grid - 24.50%
+
+
+        *** MOST LIBERAL SCAN
+        [ 30 x 30 ] pixel scan - look for variable called 'sector' in .js file
+            No filters applied, no grid, strictly shapes only - 22.50%
+            After applying filters - [ blur / opacity / brightness ] on GREEN BLOCK ONLY, without grid - 22.50%
+
+      */
+
+      // Random Shape - RED BLOCK - This red block of 10 by 10 is 100 pixels, expressed over the canvas of 200 x 200, is 0.25%
+      ctx.fillStyle = "rgba(250, 10, 10, 1)";
+      ctx.fillRect(10, 10, 10, 10);
+
+      // Random Shape - BLUE CIRCLE - This blue circle takes up 7992 pixels, expressed over the canvas of 200 x 200, is 19.98%
+      ctx.arc(150, 50, 50, 0, Math.PI * 2, true);
+      ctx.fillStyle = "rgba(10, 10, 250, 1)";
+      ctx.fill();
+
+      // Random Shape - GREEN BLOCK - This green block of 40 by 40 is 1,600 pixels, expressed over the canvas of 200 x 200, is 4%
+      ctx.fillStyle = "rgba(10, 250, 10, 1)";
+      //  ctx.filter = `blur(5px) brightness(140%) opacity(100%)`; // We can omit this line when not taking into consideration the filters to be applied
+      ctx.fillRect(160, 100, 40, 40);
+
+      // 3 SHAPES ENDS
+      // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      /*
+
+            For the below lines - GREY GRID lines
+            Grid creation as a visual guide to approximate the % of area
+            
+      */
+
+      // ctx.beginPath();
+      // ctx.lineWidth = "0.2";
+
+      // const spacing = 20; // This determines the spacing for the first, bigger grid lines
+      // const canvas = 200; // This shld coincide with canvas setup in .js file
+      // let i = spacing;
+
+      // do {
+      //   ctx.moveTo(i, 0);
+      //   ctx.lineTo(i, canvas);
+      //   i += spacing;
+      // } while (i < canvas);
+
+      // let j = spacing;
+
+      // do {
+      //   ctx.moveTo(0, j);
+      //   ctx.lineTo(canvas, j);
+      //   j += spacing;
+      // } while (j < canvas);
+
+      // ctx.stroke();
+
+      // GRID ENDS
+      // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      //
+    </script>
+  </body>
+</html>
