@@ -311,11 +311,12 @@ const avgMaxRGB = (maxR + maxG + maxB) / 3;
 const minA = 0.4;
 const maxA = 0.55;
 
-// Only values between 0 - 100 allowed for variables shapeAllotMin / shapeAllotMax, both values MUST add up to 100 to represent totality of 100%
-const shapeAllotMin = 30;
-const shapeAllotMax = 70;
+// Only values between 0 - 100 allowed for variables shapeAllotMin / shapeAllotMax, both values MUST add up to 100 to represent totality of 100% of the 'totalShapes'
+// A totality of 100% - from 35 + 65 will mean that there'll be 35% of shapes that fall within a smaller range - 'mnRad' and 65% of shapes that fall on the larger range - 'maxRad'
+const shapeAllotMin = 35;
+const shapeAllotMax = 65;
 
-// Recommended: minRad 10px+-, maxRad 90px+-
+// Recommended min/max radius: minRad 10px+-, maxRad 90px+-
 const minRad = 10;
 const maxRad = 85;
 
