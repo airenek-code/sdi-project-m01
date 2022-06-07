@@ -2,7 +2,7 @@
 
 A NTU / SkillsUnion Software Developer Immersive sole individual project to showcase understanding and knowledge towards the fundamentals of Javascript.
 
-For the first module, an original idea was conceived and developed to allow end users to paint a blank canvas by clicking on floating objects that go across the screen. An alternative to playing this mini game includes merely popping the floating objects!
+For the first module, an original idea was conceived and developed to allow end users to _paint_ a blank canvas by clicking on floating objects that go across the screen. An alternative to playing this mini game includes merely popping the floating objects!
 
 &nbsp;
 
@@ -14,15 +14,15 @@ https://airenek-code.github.io/sdi-project-m01/sdi-m01-js
 
 ## Approaches Undertaken:
 
-These are the approaches undertaken to ensure the success of the project, given the short development time of 5 days and a desire to challenge oneself while utilizing domain knowledge.
+These are the approaches undertaken to ensure the success of the project, given the short development time of **_5 days_** and a desire to challenge oneself while utilizing domain knowledge.
 
 &nbsp;
 
-- Research for guides and tutorials to gauge **project feasibility**. Divise a scaled back version of the original idea or another backup plan should milestones not be met after 1.5 days of development time.
+- Research for guides and tutorials to gauge **project feasibility**. First devise a scaled back alternative of the original idea or another backup plan, should milestones not be met after 1 - 1.5 days of development time.
 
-- Prioritization will be on the most attainable features for a **minimum viable product** _(MVP)_ by project deadline. Understand which module/s may not succeed or take a longer time due to the lack of coding experience and available references given that this is an original idea. For these module/s, development will commence with proof of concept _(POC)_ before actual implementation. This approach aids time saved, given the faster feedback. It also allows for the emergence of other possible workarounds upon the results obtained from the proof of concept - an example includes how the calculation of the canvas painted can be optimized combining methods of approximation.
+- Prioritization will be on the most attainable features for a **minimum viable product** _(MVP)_ by project deadline. Understand which module/s may not succeed or take a longer time due to the lack of coding experience and available references given that this is an _original_ idea. For these module/s, development will commence with **proof of concept** _(POC)_ before actual implementation. This approach aids time saved, given the faster feedback. It also allows for the emergence of other possible workarounds upon the results obtained from the proof of concept - an example includes how the calculation of the canvas painted can be optimized by combining methods of approximation.
 
-- An emphasis to focus on the appeal of the project using **design** and **aesthetics**. Henceforth, no efforts were spared in detailing this stage of this project. The factors considered for design includes:
+- An emphasis to focus on the appeal of the project using **design** and **aesthetics**. Henceforth, no efforts were spared in detailing this stage of the project. The factors considered for design includes:
 
 &nbsp;
 
@@ -45,9 +45,9 @@ These are the approaches undertaken to ensure the success of the project, given 
 1. Utilizing Vanilla Javascript for the creation of a mini game.
 
 2. Application of fundamental topics such as:
-Control Flow & Loops, Functions, Classes, Objects, OOP, Event Listeners, ECMAScript 2015 (ES6).
+Control Flow & Loops, Functions, Classes, Objects, OOP, Event Listeners, ECMAScript 2015 (ES6)
 
-3. Working with JS canvas and animation as these topics were not explored in fundamental classes.
+3. Experimenting with JS canvas and animation as these topics were not explored in fundamental classes.
 
 4. Effective project scoping, planning, scheduling and problem-solving processes.
 
@@ -65,6 +65,7 @@ It'll be heartening to know if the project outcome helps anyone to decompress a 
 ## Output:
 
 <img width="100%" src="./assets/images/img002-screenshot-e.PNG" />
+<img width="100%" src="./assets/images/img003-screenshot-e.PNG" />
 
 &nbsp;
 
