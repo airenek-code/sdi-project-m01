@@ -69,6 +69,13 @@ It'll be heartening to know if the project outcome helps anyone to decompress a 
 
 &nbsp;
 
+## Proof of Concept (POC):
+
+<img width="75%" src="./assets/images/img004-poc.PNG" />
+<img width="75%" src="./assets/images/img005-poc.PNG" />
+
+&nbsp;
+
 ## Author:
 
 - [Irene](https://github.com/airenek-code)
